@@ -1,0 +1,38 @@
+
+#hours, #minutes, #seconds {
+    text-align: center;
+}
+
+#clock-container {
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.cell {
+    height: 100px;
+    width: 8%;
+    display: inline-block;
+}
+
+    .cell > .inner {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        width: 80%;
+        height: 80%;
+        margin: 10%
+    }
+
+    .cell:nth-child(3),
+    .cell:nth-child(6),
+    .cell:nth-child(9) {
+        margin-right: 1%;
+    }
+
+#hours > .cell > .active,
+#minutes > .cell > .active,
+#seconds > .cell > .active {
+    background-image: url('spinner.svg');
+}

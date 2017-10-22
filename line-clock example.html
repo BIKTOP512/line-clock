@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>
+        Line Clock
+    </title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            display: table;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="lineClock.css" />
+</head>
+<body>
+    <div id="clock-container">
+        <div id="hours"></div>
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="lineClock.js"></script>
+    <script>
+        $().ready(function () {
+            lineClock();
+        });
+
+    </script>
+</body>
+</html>
